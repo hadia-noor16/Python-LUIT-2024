@@ -14,5 +14,7 @@ while True:
         break
     
     else:   
-        for user_data in sample_dict:
+        if user_data in sample_dict:
             print('Translation:',sample_dict[user_data])
+        else:
+            print('no match!')
