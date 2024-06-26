@@ -5,5 +5,4 @@ response = s3.create_bucket(
 
     Bucket='hadia-doing-boto3demo'
 )
-
-print(response)
+print(response['ResponseMetadata']['HTTPHeaders']['date'])
