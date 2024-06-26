@@ -14,14 +14,14 @@ def list_s3_buckets():
     response = s3.list_buckets()
 
     # Extract the list of buckets from the response
-    buckets = response['Buckets']
+    buckets = response['Buckets']    #buckeets here is list of dictionaries, response is a dictionary, and we are only taking key Buckets.
     
     # Print the type of 'buckets' (list)
     print(type(buckets))
 
     # Iterate through each bucket and print its name
     for bucket in buckets:
-        print(bucket['Name'])
+        print("Name:",bucket['Name'],"Creation_Date:", bucket['CreationDate'])
 
 # Uncomment the following line to print the raw response object
 # print(response)
