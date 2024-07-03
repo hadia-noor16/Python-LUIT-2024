@@ -15,7 +15,7 @@ for vpc in response['Vpcs']:
 
 
 for vpc in response['Vpcs']:
-    if 'Tags' in vpc:
+    if 'Tags' in vpc:#checkigifthekey'Tags'exists
         #print (vpc['Tags'])
         for tag in vpc['Tags']:       
             if 'Name' == tag['Key']:
