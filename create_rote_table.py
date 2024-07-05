@@ -2,11 +2,11 @@ import boto3
 
 ec2=boto3.client('ec2')
 
-#response = ec2.create_route_table(
-    #VpcId='vpc-0189588e72b5f397a'
-#)
+response = ec2.create_route_table(
+    VpcId='vpc-0189588e72b5f397a'
+)
 
-#print(response['RouteTable']['RouteTableId'])
+print(response['RouteTable']['RouteTableId'])
 
 
 #associte subnet with route table
