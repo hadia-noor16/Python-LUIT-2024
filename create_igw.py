@@ -2,10 +2,10 @@ import boto3
 
 ec2=boto3.client('ec2')
 
-#response = ec2.create_internet_gateway(
-#)
+response = ec2.create_internet_gateway(
+)
 
-#print(response)
+print(response)
 
 #attach igw to VPC
 
